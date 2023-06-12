@@ -2,6 +2,8 @@
 
 For quick access: https://worldofverdure.github.io/Sunrise/
 
-TODO:
-A) Properly place items 
-B) Make the page fully responsive.
+GOALS
+- [X] Responsive Desktop
+- [ ] Responsive Mobile Portrait
+- [ ] Responsive Mobile Landscape
+- [ ] Create your own text svg that isn't blurry like the download in mobile mode.
