@@ -1,5 +1,9 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
-  padding: 0;
+  font-size: 1.6rem;
   margin: 0;
   background: linear-gradient(to top, #ff9653 40%, #a3b5d1);
 }
@@ -8,8 +12,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  /*Are you my Eureka moment?*/
-  overflow: hidden;
+  overflow: hidden; /*Are you my Eureka moment?*/
 }
 
 .mountainImg {
@@ -26,24 +29,32 @@ body {
   z-index: 1;
 }
 
-.welcome {
-  position: absolute;
-  top: 3%;
-  left: 6%;
-  z-index: 1;
-}
-
 .moonReflectImg {
   position: absolute;
   z-index: 1;
-  bottom: 14%;
+  bottom: 4%;
   left: 83%;
   transform: scale(1, -1);
   opacity: .6;
 }
 
-@media (orientation: portrait) and (max-width: 500px) {
+/* Don't visualize the top of the viewport, visualize the top of the mountain
+and add a 100px. That is your ceiling. Also bring back calc and clamp. You got this. */
+
+/* Mobile Portrait */
+@media screen and (orientation: portrait) and (max-width: 600px) {
+  .moonImg {
+    left: 17%;
+    top: 29%;
+  }
+
+  .moonReflectImg {
+    left: 17%;
+    bottom: 2%;
+  }
+
   .mountainImg {
-    width: 200%;
+    width: 175%;
+    max-height: 75%;
   }
 }
