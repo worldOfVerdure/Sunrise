@@ -59,8 +59,13 @@ and add a 100px. That is your ceiling. Also bring back calc and clamp. You got t
   }
 }
 
-/* @media screen and (max-width: 1200) and (min-width: 600.1) {
+@media screen and (max-width: 1200px) and (min-width: 600.1px) {
   .moonImg {
-    top: 60%;
+    top: clamp(16%, calc(13% + 2vw), 18%); 
   }
-} */
+
+  .mountainImg {
+    width: 175%;
+    max-height: 75%;
+  }
+}
