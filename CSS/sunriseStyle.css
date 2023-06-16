@@ -65,7 +65,7 @@ and add a 100px. That is your ceiling. Also bring back calc and clamp. You got t
   }
 
   .mountainImg {
-    width: 175%;
+    width: 135%;
     max-height: 75%;
   }
 }
