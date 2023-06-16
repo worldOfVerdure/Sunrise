@@ -82,3 +82,10 @@ and add a 100px. That is your ceiling. Also bring back calc and clamp. You got t
     max-height: 75%;
   }
 }
+
+@supports(padding:max(0px)) {
+  body, header, footer {
+      padding-left: min(0vmin, env(safe-area-inset-left));
+      padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
