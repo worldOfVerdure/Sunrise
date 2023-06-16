@@ -64,6 +64,10 @@ and add a 100px. That is your ceiling. Also bring back calc and clamp. You got t
   .imgContainer {
     width: 100vw;
   }
+
+  /* .mountainImg {
+    width: 75%;
+  } */
 }
 
 /* Tablet viewing experience. */
