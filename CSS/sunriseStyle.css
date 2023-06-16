@@ -65,9 +65,9 @@ and add a 100px. That is your ceiling. Also bring back calc and clamp. You got t
     width: 100vw;
   }
 
-  /* .mountainImg {
+  .mountainImg {
     width: 75%;
-  } */
+  }
 }
 
 /* Tablet viewing experience. */
