@@ -1,12 +1,20 @@
+@supports(padding:max(0px)) {
+  body {
+      padding-left: min(0vmin, env(safe-area-inset-left));
+      padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
+
 html {
   font-size: 62.5%;
-  padding: env(safe-area-insert);
+  /* padding: env(safe-area-insert); */
 }
 
 body {
   font-size: 1.6rem;
   margin: 0;
   background: linear-gradient(to top, #ff9653 40%, #a3b5d1);
+  width: 100%;
 }
 
 .imgContainer {
@@ -80,12 +88,5 @@ and add a 100px. That is your ceiling. Also bring back calc and clamp. You got t
   .mountainImg {
     width: 135%;
     max-height: 75%;
-  }
-}
-
-@supports(padding:max(0px)) {
-  body, header, footer {
-      padding-left: min(0vmin, env(safe-area-inset-left));
-      padding-right: min(0vmin, env(safe-area-inset-right));
   }
 }
